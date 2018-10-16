@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Version</key>
+	<string>1.0</string>
+	<key>Name</key>
+	<string>WatchFace</string>
+	<key>ContentIdentifier</key>
+	<string>com.highcaffeinecontent.playgroundbook.WatchFace</string>
+	<key>ContentVersion</key>
+	<string>1</string>
+	<key>ImageReference</key>
+	<string>Icon.png</string>
+	<key>DeploymentTarget</key>
+	<string>ios11.0</string>
+	<key>Chapters</key>
+	<array>
+		<string>WatchFace.playgroundchapter</string>
+	</array>
+	<key>SwiftVersion</key>
+	<string>4.2</string>
+</dict>
+</plist>
