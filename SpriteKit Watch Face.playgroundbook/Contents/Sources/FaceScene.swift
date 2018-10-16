@@ -717,6 +717,15 @@ public class FaceScene: SKScene, SKSceneDelegate {
 
 public class FaceViewController : UIViewController, PlaygroundLiveViewSafeAreaContainer, PlaygroundRemoteLiveViewProxyDelegate, PlaygroundLiveViewMessageHandler
 {
+	public override func viewDidLayoutSubviews()
+	{
+		let face = FaceScene.shared!
+		let maxSceneWidth = min(self.view.bounds.size.width, self.view.bounds.size.height)
+		
+		face.camera?.xScale = (184.0/maxSceneWidth)
+		face.camera?.yScale = (184.0/maxSceneWidth)
+	}
+	
 	// MARK: - Playgrounds
 	
 	public func remoteLiveViewProxyConnectionClosed(_ remoteLiveViewProxy: PlaygroundRemoteLiveViewProxy) {
